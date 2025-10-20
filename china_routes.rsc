@@ -1,6 +1,6 @@
 # China Routes for MikroTik - Auto-generated
 # Source: RIPE Stat API (https://stat.ripe.net)
-# Generated on: 2025-10-20 12:16:51
+# Generated on: 2025-10-20 13:13:56
 
 # 🗑️ 删除旧列表：确保每个运营商列表是全新的
 # 🧩 每个运营商一个独立列表，避免冲突
