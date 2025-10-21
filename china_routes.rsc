@@ -1,6 +1,6 @@
 # China Routes for MikroTik - Auto-generated
 # Source: RIPE Stat API (https://stat.ripe.net)
-# Generated on: 2025-10-20 14:27:17
+# Generated on: 2025-10-21 13:21:11
 
 # 🗑️ 删除旧列表：确保每个运营商列表是全新的
 # 🧩 每个运营商一个独立列表，避免冲突
@@ -27,6 +27,14 @@
     /ip firewall address-list remove $i
 }
 :foreach i in=[/ipv6 firewall address-list find list="China_Mobile"] do={
+    /ipv6 firewall address-list remove $i
+}
+
+# 删除旧的 China Broading TV 列表
+:foreach i in=[/ip firewall address-list find list="China_Broading_TV"] do={
+    /ip firewall address-list remove $i
+}
+:foreach i in=[/ipv6 firewall address-list find list="China_Broading_TV"] do={
     /ipv6 firewall address-list remove $i
 }
 
@@ -29785,6 +29793,25 @@
 /ipv6 firewall address-list add list="China_Mobile" address=240a:42f8::/31 comment="China Mobile" timeout=15d
 /ipv6 firewall address-list add list="China_Mobile" address=240a:42fa::/31 comment="China Mobile" timeout=15d
 
+# === 中国广电 (China Broading TV) IPv4 ===
+/ip firewall address-list add list="China_Broading_TV" address=117.124.98.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=117.124.231.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=117.124.232.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=117.124.233.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=117.124.234.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=117.124.235.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=117.124.240.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=117.124.241.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=117.124.242.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=125.62.49.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=219.237.49.0/24 comment="China Broading TV" timeout=15d
+
+# === 中国广电 (China Broading TV) IPv6 ===
+/ipv6 firewall address-list add list="China_Broading_TV" address=240a:40c0:8200::/48 comment="China Broading TV" timeout=15d
+/ipv6 firewall address-list add list="China_Broading_TV" address=240a:40c0:8240::/48 comment="China Broading TV" timeout=15d
+/ipv6 firewall address-list add list="China_Broading_TV" address=240a:40c3:c200::/48 comment="China Broading TV" timeout=15d
+/ipv6 firewall address-list add list="China_Broading_TV" address=240a:40c3:c240::/48 comment="China Broading TV" timeout=15d
+
 # === 教育网 (CERNET) IPv4 ===
 /ip firewall address-list add list="CERNET" address=1.51.0.0/16 comment="CERNET" timeout=15d
 /ip firewall address-list add list="CERNET" address=1.51.3.0/24 comment="CERNET" timeout=15d
@@ -36424,7 +36451,6 @@
 /ip firewall address-list add list="Alibaba" address=47.56.0.0/15 comment="Alibaba" timeout=15d
 /ip firewall address-list add list="Alibaba" address=47.56.0.0/16 comment="Alibaba" timeout=15d
 /ip firewall address-list add list="Alibaba" address=47.57.0.0/16 comment="Alibaba" timeout=15d
-/ip firewall address-list add list="Alibaba" address=47.57.69.0/24 comment="Alibaba" timeout=15d
 /ip firewall address-list add list="Alibaba" address=47.74.0.0/18 comment="Alibaba" timeout=15d
 /ip firewall address-list add list="Alibaba" address=47.74.0.0/19 comment="Alibaba" timeout=15d
 /ip firewall address-list add list="Alibaba" address=47.74.0.0/21 comment="Alibaba" timeout=15d
