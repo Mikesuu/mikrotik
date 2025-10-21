@@ -1,6 +1,6 @@
 # China Routes for MikroTik - Auto-generated
 # Source: RIPE Stat API (https://stat.ripe.net)
-# Generated on: 2025-10-21 13:21:11
+# Generated on: 2025-10-21 15:02:36
 
 # 🗑️ 删除旧列表：确保每个运营商列表是全新的
 # 🧩 每个运营商一个独立列表，避免冲突
@@ -29803,10 +29803,40 @@
 /ip firewall address-list add list="China_Broading_TV" address=117.124.240.0/24 comment="China Broading TV" timeout=15d
 /ip firewall address-list add list="China_Broading_TV" address=117.124.241.0/24 comment="China Broading TV" timeout=15d
 /ip firewall address-list add list="China_Broading_TV" address=117.124.242.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=117.126.0.0/16 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=117.126.128.0/24 comment="China Broading TV" timeout=15d
 /ip firewall address-list add list="China_Broading_TV" address=125.62.49.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.89.0.0/16 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.89.230.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.0.0/16 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.1.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.5.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.6.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.7.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.8.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.10.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.12.0/22 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.20.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.21.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.22.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.23.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.24.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.25.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.26.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.32.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.33.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.34.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.35.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.146.36.0/24 comment="China Broading TV" timeout=15d
+/ip firewall address-list add list="China_Broading_TV" address=211.156.128.0/19 comment="China Broading TV" timeout=15d
 /ip firewall address-list add list="China_Broading_TV" address=219.237.49.0/24 comment="China Broading TV" timeout=15d
 
 # === 中国广电 (China Broading TV) IPv6 ===
+/ipv6 firewall address-list add list="China_Broading_TV" address=2403:600::/32 comment="China Broading TV" timeout=15d
+/ipv6 firewall address-list add list="China_Broading_TV" address=2403:600:a000::/38 comment="China Broading TV" timeout=15d
+/ipv6 firewall address-list add list="China_Broading_TV" address=2403:600:a600::/48 comment="China Broading TV" timeout=15d
+/ipv6 firewall address-list add list="China_Broading_TV" address=2403:600:a601::/48 comment="China Broading TV" timeout=15d
+/ipv6 firewall address-list add list="China_Broading_TV" address=2403:600:a602::/48 comment="China Broading TV" timeout=15d
 /ipv6 firewall address-list add list="China_Broading_TV" address=240a:40c0:8200::/48 comment="China Broading TV" timeout=15d
 /ipv6 firewall address-list add list="China_Broading_TV" address=240a:40c0:8240::/48 comment="China Broading TV" timeout=15d
 /ipv6 firewall address-list add list="China_Broading_TV" address=240a:40c3:c200::/48 comment="China Broading TV" timeout=15d
